@@ -10,7 +10,7 @@ type Record {
   userId: Int!
   username: String!
   rating: Int!
-  experienc: Int!
+  experience: Int!
   rank: Int!
   timestamp: Date
 }
@@ -20,7 +20,7 @@ type Player {
   userId: Int!
   username: String!
   rating: Int!
-  experienc: Int!
+  experience: Int!
   rank: Int!
   timestamp: Date
 }

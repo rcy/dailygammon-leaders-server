@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nodemon ./server.js --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "postinstall": "rm -rf build && babel -d build/data data && babel -d build server.js"
   },
   "repository": {
     "type": "git",

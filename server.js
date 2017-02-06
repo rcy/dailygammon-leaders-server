@@ -9,7 +9,7 @@ import { printSchema } from 'graphql/utilities/schemaPrinter';
 import { subscriptionManager } from './data/subscriptions';
 import schema from './data/schema';
 
-const GRAPHQL_PORT = 8080;
+const GRAPHQL_PORT = process.env.PORT || 8080;
 const WS_PORT = 8090;
 
 const graphQLServer = express().use('*', cors());

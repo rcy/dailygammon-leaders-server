@@ -5,7 +5,7 @@ import { pubsub } from './subscriptions';
 import MongoClient from 'mongodb';
 import assert from 'assert';
 
-const mongoUrl = process.env.MONGO_URI;
+const mongoUrl = process.env.MONGODB_URI;
 
 let db;
 let Players;
